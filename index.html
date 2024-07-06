@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    </head>
+    <body>
+        <main class="encryptor">
+            <div>
+                <img src="./assets/alura-icon.png" alt="Icono de Alura">
+            </div>
+            <section class="encryptor__view">
+                <textarea
+                    class="encryptor__view__textarea"
+                    placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+
+                <div class="encryptor__view__suggestion">
+                    <img
+                        src="./assets/exclamation.png"
+                        alt="icono de admiracion">
+                    <span
+                        class="encryptor__view__suggestion__text">Solo letras
+                        minúsculas y sin acentos</span>
+                </div>
+
+                <div class="encryptor__view__buttons">
+                    <button class="encryptor__view__buttons__button button1"
+                        type="button" onclick="encrypt()">Encriptar</button>
+                    <button class="encryptor__view__buttons__button button2"
+                        type="button" onclick="decrypt()">Desencriptar</button>
+                </div>
+                </div>
+
+            </section>
+            <section class="encryptor__result">
+                <div class="encryptor__result__container">
+                    .
+                    <p class="encryptor__result__container__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pariatur laboriosam officiis ex ut harum eaque libero
+                        quidem, quo ad omnis doloremque nulla dicta rerum
+                        deleniti aspernatur blanditiis dolorum ipsam ipsum.
+                    </p>
+
+                    <img class="encryptor__result__container__img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Texto_I_de_Gil_%281799%29.png"
+                        alt="imagen de un texto">
+                    <h1 class="encryptor__result__container__title">Ningún
+                        mensaje fue encontrado</h1>
+                    <h2 class="encryptor__result__container__subtitle">Ingresa
+                        el texto que desees encriptar o desencriptar.</h2>
+                    <div>
+
+                        <button class="encryptor__result__container__button"
+                        type="button" onclick="copyResult();">Copiar</button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="footer__text">Desarrollado por Kenfoxfire 2024</p>
+        </footer>
+        <script src="./script.js"></script>
+    </body>
+</html>
