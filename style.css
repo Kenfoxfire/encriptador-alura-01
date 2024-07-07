@@ -16,14 +16,14 @@
     --background-color: #dff2ff;
     --active-color: #D8315B;
     --dark-color: #1E1B18;
-    --gray-color:rgb(39, 37, 37);
+    --gray-color: rgb(39, 37, 37);
 
     --font-italianno: "Italianno", cursive;
     --font-roboto-mono: font-family: "Roboto Mono", monospace;
 }
 
 body {
-background: rgb(232, 226, 255);
+    background: rgb(232, 226, 255);
     background: linear-gradient(180deg, rgba(173, 150, 255, 1) 0%, rgba(102, 155, 245, 1) 100%);
     height: 100vh;
 }
@@ -86,10 +86,10 @@ background: rgb(232, 226, 255);
 
 .encryptor__view__buttons {
     display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 100%;
-        gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
 }
 
 .encryptor__view__buttons__button {
@@ -102,11 +102,11 @@ background: rgb(232, 226, 255);
 
 
 
-.encryptor__view__buttons__button.button1{
+.encryptor__view__buttons__button.button1 {
     background-color: var(--primary-color);
 }
 
-.encryptor__view__buttons__button.button2{
+.encryptor__view__buttons__button.button2 {
     background-color: var(--secondary-color);
 }
 
@@ -119,8 +119,8 @@ background: rgb(232, 226, 255);
 
 .encryptor__result {
     width: 100%;
-        min-width: 200px;
-        max-width: 500px;
+    min-width: 200px;
+    max-width: 500px;
 }
 
 .encryptor__result__container {
@@ -131,12 +131,13 @@ background: rgb(232, 226, 255);
     border-radius: 25px;
     border: 4px solid var(--secondary-color);
     box-shadow: 12px 12px 2px 1px var(--primary-color);
-    padding: 20px;
-    justify-content: space-between;
+    padding: 35px;
+    justify-content: center;
     align-items: center;
 }
 
 .encryptor__result__container__text {
+    display: none;
     font-size: 40px;
     font-weight: 700;
     font-family: var(--font-italianno);
@@ -144,24 +145,33 @@ background: rgb(232, 226, 255);
 }
 
 .encryptor__result__container__img {
-    width: 336px;
-    height: 304px;
+    width: 200px;
 }
 
-.encryptor__result__container__title {}
+.encryptor__result__container__title {
+    font-family: var(--font-italianno);
+    font-size: 50px;
+    color: #0A2463;
+}
 
-.encryptor__result__container__subtitle {}
+.encryptor__result__container__subtitle {
+    font-family: var(--font-italianno);
+    font-size: 30px;
+    color: #3E92CC;
+}
 
 .encryptor__result__container__button {
+    display: none;
     border: none;
-        width: 300px;
-        height: 30px;
-        border-radius: 24px;
-        color: var(--tertiary-color);
-        background-color: var(--dark-color);
+    width: 300px;
+    height: 30px;
+    border-radius: 24px;
+    color: var(--tertiary-color);
+    background-color: var(--dark-color);
 }
+
 .encryptor__result__container__button:hover {
-        background-color: var(--active-color);
+    background-color: var(--active-color);
 }
 
 footer {
