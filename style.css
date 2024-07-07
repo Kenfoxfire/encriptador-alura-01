@@ -195,7 +195,6 @@ footer {
 @media (max-width: 950px) {
     body {
         height: auto;
-        background-color: red !important;
     }
 
     .encryptor__icon {
