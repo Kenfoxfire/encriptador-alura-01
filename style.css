@@ -33,9 +33,9 @@ body {
     justify-content: space-between;
     padding: 50px;
     gap: 30px;
-    flex: 1;
     height: 100%;
 }
+
 
 .encryptor__view {
     display: flex;
@@ -189,4 +189,34 @@ footer {
     font-size: 20px;
     font-family: var(--font-roboto-mono);
     color: var(--dark-color);
+}
+
+
+@media (max-width: 950px) {
+    body {
+        height: auto;
+        background-color: red !important;
+    }
+
+    .encryptor__icon {
+        width: 100%;
+        display: flex;
+    }
+
+    .encryptor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 30px;
+        gap: 30px;
+    }
+
+    .encryptor__result__container__button {
+        width: 200px;
+    }
+
+    footer {
+        bottom: unset;
+    }
 }
