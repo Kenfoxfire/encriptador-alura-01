@@ -190,35 +190,3 @@ footer {
     font-family: var(--font-roboto-mono);
     color: var(--dark-color);
 }
-
-
-/* 
-::-webkit-resizer {
-    display: none;
-}
-
-textarea {
-    width: 600px;
-    height: 150px;
-    padding: 10px;
-    box-sizing: border-box;
-    color: var(--tertiary-color);
-    font-style: var(--font-roboto-mono);
-    font-size: 32px;
-    resize: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-::placeholder {
-    color: var(--tertiary-color);
-    font-style: var(--font-roboto-mono);
-    font-size: 32px;
-} */
-
-
-/* 
-.encryptor__result__container__img{
-    width: 336px;
-    height: 304px;
-} */
