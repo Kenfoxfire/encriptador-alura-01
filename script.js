@@ -18,7 +18,7 @@ function changeVisibility() {
     document.querySelector('.encryptor__result__container__img').style.display = 'none'
     document.querySelector('.encryptor__result__container__title').style.display = 'none'
     document.querySelector('.encryptor__result__container__subtitle').style.display = 'none'
-    document.querySelector('.encryptor__result__container__text').style.display = 'block'
+    document.querySelector('.encryptor__result__container__content__text').style.display = 'block'
     document.querySelector('.encryptor__result__container__button').style.display = 'block'
     document.querySelector('.encryptor__result__container').style.justifyContent = 'space-between'
     changedVisibility = true;
@@ -36,7 +36,7 @@ function encrypt() {
         return letter
     })
 
-    document.querySelector('.encryptor__result__container__text').innerText = encrypted.join('')
+    document.querySelector('.encryptor__result__container__content__text').innerText = encrypted.join('')
 }
 
 function decrypt() {
