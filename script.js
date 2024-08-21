@@ -35,7 +35,6 @@ function encrypt() {
         }
         return letter
     })
-
     document.querySelector('.encryptor__result__container__content__text').innerText = encrypted.join('')
 }
 
@@ -48,10 +47,10 @@ function decrypt() {
         decrypt = decrypt.join(decryptDictionary[key]) // Creamos un nuevo string uniendo todos los elementos del Array y de separador usamos la Key
         // En síntesis creamos un Array eliminando las "letras encriptadas" y dividiéndolo, donde se encontraban. Luego unimos el Array en un solo string y como separador usamos la letra que correspondía a esas "letras encriptadas"
     }
-    document.querySelector('.encryptor__result__container__text').innerText = decrypt
+    document.querySelector('.encryptor__result__container__content__text').innerText = decrypt
 }
 
 function copyResult() {
-    const text = document.querySelector('.encryptor__result__container__text').innerText
+    const text = document.querySelector('.encryptor__result__container__content__text').innerText
     navigator.clipboard.writeText(text)
 }
